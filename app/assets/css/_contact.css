@@ -1,0 +1,61 @@
+:root {
+    --contact-wrapper-color: #4A0B56;
+}
+
+/* start contact styles */
+.contact-wrapper {
+    height: 38px;
+    background-color: var(--contact-wrapper-color);
+}
+
+.company-name h3 {
+    font-weight: normal;
+    display: inline;
+
+}
+
+.company-name span {
+    vertical-align: -2px;
+    font-size: 15px;
+}
+
+.social-media {
+    direction: ltr;
+}
+
+
+.social-media i {
+    text-align: center;
+    width: 38px;
+    font-size: 18px;
+    margin: 0 2px 0 0;
+    color: white;
+    vertical-align: -8px;
+    padding: 10px;
+    transition: 0.25s linear;
+}
+
+
+.social-media i:hover {
+    background-color: orange;
+}
+
+.nothing {
+    position: absolute;
+    text-align: center;
+    width: 80px;
+    top: 45px;
+    left: 0;
+    font-size: 11px;
+    color: red;
+    background-color: #efefef;
+    display: none;
+}
+
+.nothing-show {
+    display: block;
+}
+/* end contact styles */
+
+/* start media queries custom */
+/* end media queries custom */
