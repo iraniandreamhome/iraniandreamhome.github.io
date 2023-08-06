@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #000;
+        }
+        #Clock {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            font-size: 100px;
+            color: aqua;
+        }
+        @media screen and (max-width:576px){
+            #Clock {
+                font-size: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="Clock"></div>
+
+    <script>
+        function clockEngine() {
+            var time  = new Date();
+            var hour = time.getHours();
+            var minute = time.getMinutes();
+            var second = time.getSeconds();
+
+            var ma = "AM"
+
+            if (hour > 12) {
+                hour -= 12;
+                ma = "PM";
+            }
+
+            if (hour < 10) {
+                hour = "0" + hour;
+            }
+
+            if (minute < 10) {
+                minute = "0" + minute;
+            }
+
+            if (second < 10) {
+                second = "0" + second;
+            }
+
+            var clock = hour + ":" + minute + ":" + second + " " + ma;
+            document.getElementById("Clock").textContent = clock;
+
+            setTimeout(clockEngine,1000);
+        }
+
+        clockEngine();
+    </script>
+</body>
+</html>
