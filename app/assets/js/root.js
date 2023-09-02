@@ -1,6 +1,6 @@
-const loading_div = document.getElementById("loading"),
-bg_loading_div = document.getElementById("bg-loading"),
-text_loading = document.getElementById("loading-text");
+const loading_div = document.getElementById("loading");
+const bg_loading_div = document.getElementById("bg-loading");
+const text_loading = document.getElementById("loading-text");
 
 function loaded() {
     loading_div.className = "";
@@ -12,5 +12,4 @@ function loaded() {
 }
 
 function more_social() {
-
 }
