@@ -1,5 +1,7 @@
 php/
 admin/
+*.otf
+*.svg
 *.ttf
 *.woff
 *.woff2
