@@ -22,17 +22,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: IRANSansWeb_Medium;
-  src: url(../font/IRANSansWeb_Medium.eot);
-  src: url(../font/IRANSansWeb_Medium.eot?#iefix) format(embedded-opentype),
-    url(../font/IRANSansWeb_Medium.otf) format(otf),
-    url(../font/IRANSansWeb_Medium.svg#IRANSansWeb_Medium) format(svg),
-    url(../font/IRANSansWeb_Medium.ttf) format(truetype),
-    url(../font/IRANSansWeb_Medium.woff) format(woff),
-    url(../font/IRANSansWeb_Medium.woff2) format(woff2);
-}
-
 * {
   margin: 0;
   padding: 0;
