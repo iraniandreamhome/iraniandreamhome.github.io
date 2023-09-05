@@ -1,15 +1,8 @@
-const loading_div = document.getElementById("loading");
-const bg_loading_div = document.getElementById("bg-loading");
-const text_loading = document.getElementById("loading-text");
-
-function loaded() {
-    loading_div.className = "";
-    bg_loading_div.className = "";
-    text_loading.className = "";
-    loading_div.style.display = "none";
-    bg_loading_div.style.display = "none";
-    text_loading.style.display = "none";
-}
+$(document).ready(function(){
+    $("#loading").hide();
+    $("#bg-loading").hide();
+    $("#loading-text").hide();
+})
 
 function more_social() {
 }
