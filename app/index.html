@@ -13,7 +13,10 @@
     />
 
     <meta name="author" content="Amir Arsalan Nazari" />
-    <link rel="stylesheet" href="assets/css/media-grids.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link
       rel="shortcut icon"
@@ -23,38 +26,45 @@
     <title>خانه های رویایی ایرانی</title>
   </head>
 
-  <body>
+  <body dir="rtl">
+    <!--==================== start noscript section ====================-->
+
     <noscript>
       <div
-        style="height: 100vh; width: 100vw; position: fixed; z-index: 1000"
-        class="white-Color-bg"
+        style="z-index: 1000"
+        class="d-flex position-fixed bg-white align-items-center justify-content-center vh-100 vw-100"
       >
-        <p
-          style="font-size: 40px; color: red; position: fixed"
-          class="ver-hor-center"
-        >
+        <p class="position-fixed text-danger" style="font-size: 40px">
           لطفا جاوا اسکریپت مرورگر خود را روشن کنید !<span
-            style="display: block"
-            class="text-center"
+            class="d-block text-center"
             >سپس صفحه را رفرش کنید</span
           >
         </p>
       </div>
     </noscript>
-    <div id="bg-loading" class="bg-loading">
-      <span id="loading-text" class="loading-text">Loading ...</span>
-      <div id="loading" class="loading"></div>
+
+    <!--==================== end noscript section ====================-->
+
+    <!--==================== start loading section ====================-->
+
+    <div class="bg-loading">
+      <span class="loading-text">در حال بارگزاری...</span>
+      <div class="loading"></div>
     </div>
-    <!-- start contact section -->
-    <section class="container-fluid contact-wrapper">
-      <div class="row">
-        <div class="container">
-          <div class="col-xs-6 col-sm-6 col-md-6 company-name white-Color-co">
+
+    <!--==================== end loading section ====================-->
+
+    <!--==================== start contact section ====================-->
+
+    <section class="container-fluid contact-wrapper align-items-center">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-xs-8 col-sm-4 company-name text-light">
             <h3>
-              <span aria-label="hello">خانه های رویایی ایرانی</span>
+              <span class="fw-normal">خانه های رویایی ایرانی</span>
             </h3>
           </div>
-          <div class="col-xs-6 col-sm-6 col-md-6 social-media">
+          <div dir="ltr" class="col-xs-4 col-sm-8 social-media">
             <a href="https://wa.me/+989178638876" target="_blank">
               <i class="fa-brands fa-whatsapp"></i>
             </a>
@@ -85,30 +95,38 @@
             <a href="tel:+989178638876">
               <i class="fa-solid fa-phone"></i>
             </a>
-            <a href="javascript:more_social()">
-              <i id="ellipsis" class="fa-solid fa-ellipsis-vertical"></i>
+            <a href="javascript:void(0)" onclick="more_social()">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
             </a>
-            <div id="more-social">
-              <a href=""></a>
-            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- end contact section -->
 
-    <!-- start scripts section -->
-    <script
-      src="https://kit.fontawesome.com/d7ae55cf3a.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <!--==================== end contact section ====================-->
+
+    <!--==================== start scripts section ====================-->
+
+    <!--=====Font Awesome Script=====-->
+    <script src="https://kit.fontawesome.com/d7ae55cf3a.js"></script>
+
+    <!--=====Sweet Alert Script=====-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!--=====jQuery Script=====-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+    <!--=====Popperjs Script=====-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+
+    <!--=====Bootstrap Scripts=====-->
+    <!--I can't use both!-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script> -->
+
+    <!--=====Local Scripts=====-->
     <script src="assets/js/root.js"></script>
-    <!-- end scripts section -->
+
+    <!--==================== end scripts section ====================-->
   </body>
 </html>

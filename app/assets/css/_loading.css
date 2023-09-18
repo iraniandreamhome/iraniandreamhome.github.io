@@ -1,19 +1,18 @@
+.bg-loading {
+  width: 100%;
+  height: 100%;
+  cursor: progress;
+  position: absolute;
+  background-color: #fff;
+  z-index: 2;
+}
+
 .loading-text {
   position: absolute;
   left: 51%;
   top: 30%;
   transform: translate(-50%, -50%);
-  font-size: 50px;
-}
-
-.bg-loading {
-  cursor: progress;
-  position: absolute;
-  direction: ltr;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  z-index: 2;
+  font-size: 30px;
 }
 
 .loading {
@@ -23,11 +22,11 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  border: 10px solid #4a0b56;
+  border: 9px solid var(--contact-wrapper-color);
   border-right: 10px solid transparent;
   border-radius: 50%;
   z-index: 2;
-  animation: loading 1s linear infinite;
+  animation: loading .75s linear infinite;
 }
 
 @keyframes loading {
@@ -41,13 +40,13 @@
 
 @media only screen and (max-width: 576px) {
   .loading-text {
-    font-size: 30px;
+    font-size: 20px;
     top: 40%;
   }
   .loading {
-    width: 60px;
-    height: 60px;
-    border: 5px solid #4a0b56;
+    width: 50px;
+    height: 50px;
+    border: 6px solid var(--contact-wrapper-color);
     border-right: 5px solid transparent;
   }
 }

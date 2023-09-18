@@ -1,5 +1,6 @@
 php/
 admin/
+test/
 *.otf
 *.svg
 *.ttf
